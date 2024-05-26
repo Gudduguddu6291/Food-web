@@ -1,0 +1,141 @@
+/* CSS RESET */
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* NAVBAR */
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+    }
+
+/* NAVBAR: LOGO AND LOGO IMG */
+    #logo{
+        margin: 3px 10px;
+    }
+
+    #logo img{ 
+        height: 90px;
+        border-radius: 50%;
+    }
+/* NAVIGATION BAR: LIST STYLING */
+
+    #navbar ul{
+        display: flex;
+    }
+
+    #navbar::before{
+        content: " ";
+        background-color: rgb(99, 96, 96);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a{
+        display: block;
+        color: white;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    #navbar ul li a:hover{
+        color: black;
+        background-color: aliceblue;
+    }
+
+    /* HOME */
+    #Home{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Home::before{
+        top: 0px;
+        content: "";
+        position: absolute;
+        background: url("img/cooked-food-1860208.jpg") no-repeat center center/cover;
+        height: 70%;
+        width: 100%;
+        z-index: -2;
+        opacity: 0.95;
+    }
+
+    #Home h1{
+        color: rgb(21, 11, 99);
+        text-align: center;
+    }
+
+    #Home p{
+        color: rgb(230, 158, 202);
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Services section */
+    #services{
+        margin: 14px;
+        display: flex;
+    }
+
+    #services .box{
+        border: 2px solid brown;
+        border-radius: 15px;
+        margin: 3px 5px;
+        padding: 3px 3px;
+        width: 32%;
+        background-color: darkgray;
+    }
+    
+    #services .box img{
+        display: block;
+        height: 115px;
+        margin: auto;
+    }
+    /* Clients Section */
+    #Client-section{
+        height: 114px;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+        height: 112px;
+    }
+
+    /* UTILITY CLASSES */
+    .h-primary{
+       font-size: 2.8rem;
+       padding: 12px;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #button{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: brown;
+        color: white;
+        margin: 17px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .center{
+        text-align: center;
+    }
